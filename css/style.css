@@ -1,0 +1,98 @@
+html {
+	overflow: hidden;
+	font: 13px/18px Georgia,Times New Roman,serif;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	background: #7685A6; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #7685A6 0%, #3c5a76 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#7685A6), color-stop(100%,#3c5a76)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #7685A6 0%,#3c5a76 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #7685A6 0%,#3c5a76 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #7685A6 0%,#3c5a76 100%); /* IE10+ */
+	background: radial-gradient(center, ellipse cover,  #7685A6 0%,#3c5a76 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7685A6', endColorstr='#4D597C',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+	text-shadow: 0 1px 1px #333;
+}
+
+a:hover {
+	text-shadow: 0 1px 1px #000;
+}
+
+#title {
+	position: relative;
+}
+
+.title {
+	font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, 0.68);
+	letter-spacing: -1px;
+	margin: 0;
+}
+
+#description {
+	position: relative;
+	margin-top: 10px;
+	color: #22263D;
+	font-size: 18px;
+	line-height: 24px;
+	color: #22263D;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
+}
+
+#left {
+	text-align: right;
+	position: absolute;
+	top: 30%;
+	right: 50%;
+	margin-right: 20px;
+}
+
+#right {
+	position: absolute;
+	left: 50%;
+	top: 29%;
+	margin-left: 20px;
+}
+
+.avatar {
+	border: 5px solid #EEE;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.68);
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.68);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.68);
+	margin-left: 4px;
+	display: inline;
+	position: relative;
+        height: 166px;
+        width: 166px;
+}
+
+#links ul {
+	margin-top: 20px;
+	list-style: none;
+}
+
+#links ul li {
+	height: 68px;
+	position: relative;
+	float: right;
+}
+
+#links img {
+	position: relative;
+}
+
+#links img.shadow {
+	bottom: 2px;
+	left: 0px;
+	position: absolute;
+}
