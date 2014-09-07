@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.nilhcem.xebia.essentials.test" tests="2" failures="0" errors="0" time="43.543" timestamp="2014-09-06T21:17:55" hostname="localhost">
+  <properties />
+  <testcase name="testCardDetail" classname="com.nilhcem.xebia.essentials.test.CardsDetailTest" time="12.761" />
+  <testcase name="testCardsListing" classname="com.nilhcem.xebia.essentials.test.CardsListingTest" time="30.764" />
+</testsuite>

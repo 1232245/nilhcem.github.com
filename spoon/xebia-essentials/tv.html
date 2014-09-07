@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xebia Essentials Android</title>
+        <link href="http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="static/bootstrap.min.css" rel="stylesheet">
+        <link href="static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="static/spoon.css" rel="stylesheet">
+        <link href="static/nivo-slider.css" rel="stylesheet">
+        <script src="static/jquery.min.js"></script>
+        <script src="static/bootstrap.min.js"></script>
+        <script src="static/jquery.nivo.slider.pack.js"></script>
+        <meta name="description" content="">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1 id="title"></h1>
+                <p id="subtitle"></p>
+            </div>
+
+            <div class="row">
+                <div id="test-info" class="span6">
+                    <!-- Current test information -->
+                    <div id="current-test-info" class="test-result">
+                        <h1 id="test-name"></h1>
+                        <h3 id="test-class-name"></h3>
+                        <h3 id="caption"></h3>
+                    </div>
+
+                    <!-- Overall test information -->
+                    <div id="overall-test-info">
+                        <p>Displaying test <span id="current-test-number">0</span> of <span id="total-test-size">0</span></p>
+                        <p>Tests executed on <span id="test-date">Saturday, September 06, 11:16 PM</span>, in <span id="duration">2 minutes, 6 seconds</span></p>
+                    </div>
+                </div>
+                <div id="slider-wrapper" class="theme-default span6">
+                    <div id="slider" class="nivoSlider"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var devices = [
+  {
+    "serial": "0626a4480051c7b9",
+    "name": "LGE Nexus 5",
+    "details": "Running Android 4.4.4 (API 19) with locale en-US",
+    "testResults": [
+      {
+        "classSimpleName": "CardsDetailTest",
+        "methodPrettyName": "Card Detail",
+        "serial": "0626a4480051c7b9",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 16,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsDetailTest/testCardDetail/1410034562137_alone_time_front_card.png",
+            "caption": "Alone Time Front Card"
+          },
+          {
+            "id": 17,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsDetailTest/testCardDetail/1410034563958_alone_time_back_card.png",
+            "caption": "Alone Time Back Card"
+          },
+          {
+            "id": 18,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsDetailTest/testCardDetail/1410034565632_card_detail.png",
+            "caption": "Card Detail"
+          },
+          {
+            "id": 19,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsDetailTest/testCardDetail/1410034567049_card_swiped.png",
+            "caption": "Card Swiped"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "CardsListingTest",
+        "methodPrettyName": "Cards Listing",
+        "serial": "0626a4480051c7b9",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 20,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034571245_cards_listing.png",
+            "caption": "Cards Listing"
+          },
+          {
+            "id": 21,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034580223_all_cards_visible.png",
+            "caption": "All Cards Visible"
+          },
+          {
+            "id": 22,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034581435_navigation_drawer_opened.png",
+            "caption": "Navigation Drawer Opened"
+          },
+          {
+            "id": 23,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034583278_collaboration_cards.png",
+            "caption": "Collaboration Cards"
+          },
+          {
+            "id": 24,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034584425_navigation_drawer_opened.png",
+            "caption": "Navigation Drawer Opened"
+          },
+          {
+            "id": 25,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034586275_craftsmanship_cards.png",
+            "caption": "Craftsmanship Cards"
+          },
+          {
+            "id": 26,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034587439_navigation_drawer_opened.png",
+            "caption": "Navigation Drawer Opened"
+          },
+          {
+            "id": 27,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034589305_realisation_cards.png",
+            "caption": "Realisation Cards"
+          },
+          {
+            "id": 28,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034590501_navigation_drawer_opened.png",
+            "caption": "Navigation Drawer Opened"
+          },
+          {
+            "id": 29,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034592418_testing_cards.png",
+            "caption": "Testing Cards"
+          },
+          {
+            "id": 30,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034593587_navigation_drawer_opened.png",
+            "caption": "Navigation Drawer Opened"
+          },
+          {
+            "id": 31,
+            "path": "image/0626a4480051c7b9/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034597440_about_dialog.png",
+            "caption": "About Dialog"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "serial": "0a291830",
+    "name": "Asus Nexus 7",
+    "details": "Running Android 4.4.4 (API 19) with locale en-US",
+    "testResults": [
+      {
+        "classSimpleName": "CardsDetailTest",
+        "methodPrettyName": "Card Detail",
+        "serial": "0a291830",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 0,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsDetailTest/testCardDetail/1410034571462_alone_time_front_card.png",
+            "caption": "Alone Time Front Card"
+          },
+          {
+            "id": 1,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsDetailTest/testCardDetail/1410034573720_alone_time_back_card.png",
+            "caption": "Alone Time Back Card"
+          },
+          {
+            "id": 2,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsDetailTest/testCardDetail/1410034575874_card_detail.png",
+            "caption": "Card Detail"
+          },
+          {
+            "id": 3,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsDetailTest/testCardDetail/1410034577975_card_swiped.png",
+            "caption": "Card Swiped"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "CardsListingTest",
+        "methodPrettyName": "Cards Listing",
+        "serial": "0a291830",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 4,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034584386_cards_listing.png",
+            "caption": "Cards Listing"
+          },
+          {
+            "id": 5,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034594930_all_cards_visible.png",
+            "caption": "All Cards Visible"
+          },
+          {
+            "id": 6,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034596556_navigation_drawer_opened.png",
+            "caption": "Navigation Drawer Opened"
+          },
+          {
+            "id": 7,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034598838_collaboration_cards.png",
+            "caption": "Collaboration Cards"
+          },
+          {
+            "id": 8,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034600409_navigation_drawer_opened.png",
+            "caption": "Navigation Drawer Opened"
+          },
+          {
+            "id": 9,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034602708_craftsmanship_cards.png",
+            "caption": "Craftsmanship Cards"
+          },
+          {
+            "id": 10,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034604270_navigation_drawer_opened.png",
+            "caption": "Navigation Drawer Opened"
+          },
+          {
+            "id": 11,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034606528_realisation_cards.png",
+            "caption": "Realisation Cards"
+          },
+          {
+            "id": 12,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034608126_navigation_drawer_opened.png",
+            "caption": "Navigation Drawer Opened"
+          },
+          {
+            "id": 13,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034610408_testing_cards.png",
+            "caption": "Testing Cards"
+          },
+          {
+            "id": 14,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034611986_navigation_drawer_opened.png",
+            "caption": "Navigation Drawer Opened"
+          },
+          {
+            "id": 15,
+            "path": "image/0a291830/com.nilhcem.xebia.essentials.test.CardsListingTest/testCardsListing/1410034616774_about_dialog.png",
+            "caption": "About Dialog"
+          }
+        ]
+      }
+    ]
+  }
+];
+
+            function updateDevice(device) {
+                $('#title').text(device.name);
+                $('#subtitle').text(device.details);
+                $('#total-test-size').text(device.testResults.length)
+
+                testResultIndex = 0
+                updateTest(device.testResults[testResultIndex]);
+            }
+
+            function updateTest(testResult) {
+                $('#current-test-info').removeClass('pass', 'fail', 'error')
+                $('#current-test-info').addClass(testResult.status)
+                $('#test-name').text(testResult.methodPrettyName)
+                $('#test-class-name').text(testResult.classSimpleName)
+
+                $("#slider").empty();
+                $.each(testResult.screenshots, function(index, screenshot) {
+                    tag = '<img alt="' + screenshot.caption + '" src="' + screenshot.path + '" />'
+                    $('#slider').append(tag)
+                });
+
+                $('#current-test-number').text(testResultIndex + 1)
+                screenshotIndex = 0
+
+                // Re-initialize the slider with the new slides
+                $('#slider').nivoSlider({
+                    effect: 'boxRainGrow', // Specify sets like: 'fold,fade,sliceDown'
+                    animSpeed: 500, // Slide transition speed
+                    pauseTime: 3000, // How long each slide will show
+                    directionNav: false, // Next & Prev navigation
+                    controlNavThumbs: false, // Use thumbnails for Control Nav
+                    pauseOnHover: false, // Stop animation while hovering
+                    manualAdvance: false, // Force manual transitions
+                    beforeChange: function(){ // Triggers before a slide transition
+                        screenshotIndex++
+                        if(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex]) {
+                            $('#caption').text(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex].caption)
+                        }
+                    },
+                    lastSlide: function(){ // Triggers when last slide is shown
+                        $('#caption').text("")
+                    },
+                    afterLoad: function(){ // Triggers when slider has loaded
+                        $('#caption').text(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex].caption)
+                    },
+                    slideshowEnd: function() { // Triggers after all slides have been shown
+                        nextTestResult()
+                    }
+                });
+
+                // There's a bug in Nivo where it doesn't know what to do w/ only one screenshot.
+                if(testResult.screenshots.length == 1) {
+                    window.setTimeout(nextTestResult, 3000)
+                }
+            }
+
+            function nextTestResult() {
+                $('#slider').data('nivoslider').stop();
+                $('#slider-wrapper').empty()
+                $('#slider-wrapper').append($('<div id="slider" class="nivoSlider"/>'))
+
+                testResultIndex++
+                tests = devices[deviceIndex].testResults
+                if(testResultIndex < tests.length) {
+                    updateTest(tests[testResultIndex])
+                } else {
+                    nextDevice()
+                }
+            }
+
+            function nextDevice() {
+                if(deviceIndex == devices.length - 1) {
+                    location.reload() // Reload at end to load new spoon results.
+                } else {
+                    deviceIndex++
+                    updateDevice(devices[deviceIndex])
+                }
+            }
+
+            // If we start feeling fancy we could create an actual class. Until then, we're global.
+            var deviceIndex = 0;
+            var testResultIndex = 0;
+            var screenshotIndex = 0;
+
+            // Start it off
+            $(function() {
+                updateDevice(devices[deviceIndex]);
+            });
+        </script>
+    </body>
+</html>
