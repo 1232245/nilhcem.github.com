@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.nilhcem.xebia.hp.test" tests="4" failures="0" errors="0" time="32.71" timestamp="2014-11-02T14:42:36" hostname="localhost">
+  <properties />
+  <testcase name="testBuy1BookWithAMinusOffer" classname="com.nilhcem.xebia.hp.espresso.BooksListActivityTest" time="6.019" />
+  <testcase name="testBuy3BooksWithAPercentageOffer" classname="com.nilhcem.xebia.hp.espresso.BooksListActivityTest" time="7.247" />
+  <testcase name="testBuy4BooksWithASliceOffer" classname="com.nilhcem.xebia.hp.espresso.BooksListActivityTest" time="7.802" />
+  <testcase name="testBuy7BooksWithASliceOffer" classname="com.nilhcem.xebia.hp.espresso.BooksListActivityTest" time="11.64" />
+</testsuite>

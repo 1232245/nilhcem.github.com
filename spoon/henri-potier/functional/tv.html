@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>app mockDebugTest</title>
+        <link href="http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold" rel="stylesheet">
+        <link href="static/bootstrap.min.css" rel="stylesheet">
+        <link href="static/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="static/spoon.css" rel="stylesheet">
+        <link href="static/nivo-slider.css" rel="stylesheet">
+        <script src="static/jquery.min.js"></script>
+        <script src="static/bootstrap.min.js"></script>
+        <script src="static/jquery.nivo.slider.pack.js"></script>
+        <meta name="description" content="">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <h1 id="title"></h1>
+                <p id="subtitle"></p>
+            </div>
+
+            <div class="row">
+                <div id="test-info" class="span6">
+                    <!-- Current test information -->
+                    <div id="current-test-info" class="test-result">
+                        <h1 id="test-name"></h1>
+                        <h3 id="test-class-name"></h3>
+                        <h3 id="caption"></h3>
+                    </div>
+
+                    <!-- Overall test information -->
+                    <div id="overall-test-info">
+                        <p>Displaying test <span id="current-test-number">0</span> of <span id="total-test-size">0</span></p>
+                        <p>Tests executed on <span id="test-date">Sunday, November 02, 2:41 PM</span>, in <span id="duration">1 minute, 44 seconds</span></p>
+                    </div>
+                </div>
+                <div id="slider-wrapper" class="theme-default span6">
+                    <div id="slider" class="nivoSlider"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var devices = [
+  {
+    "serial": "0123456789ABCDEF",
+    "name": "LENOVO B6000-F",
+    "details": "Running Android 4.4.2 (API 19) with locale en-GB",
+    "testResults": [
+      {
+        "classSimpleName": "BooksListActivityTest",
+        "methodPrettyName": "Buy1 Book With A Minus Offer",
+        "serial": "0123456789ABCDEF",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 23,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy1BookWithAMinusOffer/1414935664122_books_listing.png",
+            "caption": "Books Listing"
+          },
+          {
+            "id": 24,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy1BookWithAMinusOffer/1414935665290_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 25,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy1BookWithAMinusOffer/1414935666687_cart_total.png",
+            "caption": "Cart Total"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "BooksListActivityTest",
+        "methodPrettyName": "Buy3 Books With A Percentage Offer",
+        "serial": "0123456789ABCDEF",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 26,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy3BooksWithAPercentageOffer/1414935668620_books_listing.png",
+            "caption": "Books Listing"
+          },
+          {
+            "id": 27,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy3BooksWithAPercentageOffer/1414935669760_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 28,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy3BooksWithAPercentageOffer/1414935670870_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 29,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy3BooksWithAPercentageOffer/1414935672171_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 30,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy3BooksWithAPercentageOffer/1414935673930_cart_total.png",
+            "caption": "Cart Total"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "BooksListActivityTest",
+        "methodPrettyName": "Buy4 Books With A Slice Offer",
+        "serial": "0123456789ABCDEF",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 31,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy4BooksWithASliceOffer/1414935676188_books_listing.png",
+            "caption": "Books Listing"
+          },
+          {
+            "id": 32,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy4BooksWithASliceOffer/1414935677230_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 33,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy4BooksWithASliceOffer/1414935678229_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 34,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy4BooksWithASliceOffer/1414935679434_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 35,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy4BooksWithASliceOffer/1414935680432_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 36,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy4BooksWithASliceOffer/1414935681737_cart_total.png",
+            "caption": "Cart Total"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "BooksListActivityTest",
+        "methodPrettyName": "Buy7 Books With A Slice Offer",
+        "serial": "0123456789ABCDEF",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 37,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935684189_books_listing.png",
+            "caption": "Books Listing"
+          },
+          {
+            "id": 38,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935685222_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 39,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935686236_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 40,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935687411_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 41,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935688409_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 42,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935689504_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 43,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935690636_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 44,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935691825_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 45,
+            "path": "image/0123456789ABCDEF/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935693363_cart_total.png",
+            "caption": "Cart Total"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "serial": "208d916a",
+    "name": "Xiaomi MI 2",
+    "details": "Running Android 4.1.1 (API 16) with locale fr-FR",
+    "testResults": [
+      {
+        "classSimpleName": "BooksListActivityTest",
+        "methodPrettyName": "Buy1 Book With A Minus Offer",
+        "serial": "208d916a",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 0,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy1BookWithAMinusOffer/1414935640190_books_listing.png",
+            "caption": "Books Listing"
+          },
+          {
+            "id": 1,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy1BookWithAMinusOffer/1414935641088_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 2,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy1BookWithAMinusOffer/1414935642370_cart_total.png",
+            "caption": "Cart Total"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "BooksListActivityTest",
+        "methodPrettyName": "Buy3 Books With A Percentage Offer",
+        "serial": "208d916a",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 3,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy3BooksWithAPercentageOffer/1414935643542_books_listing.png",
+            "caption": "Books Listing"
+          },
+          {
+            "id": 4,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy3BooksWithAPercentageOffer/1414935644672_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 5,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy3BooksWithAPercentageOffer/1414935645523_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 6,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy3BooksWithAPercentageOffer/1414935646897_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 7,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy3BooksWithAPercentageOffer/1414935647950_cart_total.png",
+            "caption": "Cart Total"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "BooksListActivityTest",
+        "methodPrettyName": "Buy4 Books With A Slice Offer",
+        "serial": "208d916a",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 8,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy4BooksWithASliceOffer/1414935649166_books_listing.png",
+            "caption": "Books Listing"
+          },
+          {
+            "id": 9,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy4BooksWithASliceOffer/1414935650219_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 10,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy4BooksWithASliceOffer/1414935651031_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 11,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy4BooksWithASliceOffer/1414935651959_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 12,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy4BooksWithASliceOffer/1414935652704_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 13,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy4BooksWithASliceOffer/1414935653767_cart_total.png",
+            "caption": "Cart Total"
+          }
+        ]
+      },
+      {
+        "classSimpleName": "BooksListActivityTest",
+        "methodPrettyName": "Buy7 Books With A Slice Offer",
+        "serial": "208d916a",
+        "status": "pass",
+        "screenshots": [
+          {
+            "id": 14,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935655284_books_listing.png",
+            "caption": "Books Listing"
+          },
+          {
+            "id": 15,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935656119_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 16,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935656931_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 17,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935657863_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 18,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935658589_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 19,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935659760_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 20,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935660593_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 21,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935661542_book_added_to_cart.png",
+            "caption": "Book Added To Cart"
+          },
+          {
+            "id": 22,
+            "path": "image/208d916a/com.nilhcem.xebia.hp.espresso.BooksListActivityTest/testBuy7BooksWithASliceOffer/1414935662858_cart_total.png",
+            "caption": "Cart Total"
+          }
+        ]
+      }
+    ]
+  }
+];
+
+            function updateDevice(device) {
+                $('#title').text(device.name);
+                $('#subtitle').text(device.details);
+                $('#total-test-size').text(device.testResults.length)
+
+                testResultIndex = 0
+                updateTest(device.testResults[testResultIndex]);
+            }
+
+            function updateTest(testResult) {
+                $('#current-test-info').removeClass('pass', 'fail', 'error')
+                $('#current-test-info').addClass(testResult.status)
+                $('#test-name').text(testResult.methodPrettyName)
+                $('#test-class-name').text(testResult.classSimpleName)
+
+                $("#slider").empty();
+                $.each(testResult.screenshots, function(index, screenshot) {
+                    tag = '<img alt="' + screenshot.caption + '" src="' + screenshot.path + '" />'
+                    $('#slider').append(tag)
+                });
+
+                $('#current-test-number').text(testResultIndex + 1)
+                screenshotIndex = 0
+
+                // Re-initialize the slider with the new slides
+                $('#slider').nivoSlider({
+                    effect: 'boxRainGrow', // Specify sets like: 'fold,fade,sliceDown'
+                    animSpeed: 500, // Slide transition speed
+                    pauseTime: 3000, // How long each slide will show
+                    directionNav: false, // Next & Prev navigation
+                    controlNavThumbs: false, // Use thumbnails for Control Nav
+                    pauseOnHover: false, // Stop animation while hovering
+                    manualAdvance: false, // Force manual transitions
+                    beforeChange: function(){ // Triggers before a slide transition
+                        screenshotIndex++
+                        if(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex]) {
+                            $('#caption').text(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex].caption)
+                        }
+                    },
+                    lastSlide: function(){ // Triggers when last slide is shown
+                        $('#caption').text("")
+                    },
+                    afterLoad: function(){ // Triggers when slider has loaded
+                        $('#caption').text(devices[deviceIndex].testResults[testResultIndex].screenshots[screenshotIndex].caption)
+                    },
+                    slideshowEnd: function() { // Triggers after all slides have been shown
+                        nextTestResult()
+                    }
+                });
+
+                // There's a bug in Nivo where it doesn't know what to do w/ only one screenshot.
+                if(testResult.screenshots.length == 1) {
+                    window.setTimeout(nextTestResult, 3000)
+                }
+            }
+
+            function nextTestResult() {
+                $('#slider').data('nivoslider').stop();
+                $('#slider-wrapper').empty()
+                $('#slider-wrapper').append($('<div id="slider" class="nivoSlider"/>'))
+
+                testResultIndex++
+                tests = devices[deviceIndex].testResults
+                if(testResultIndex < tests.length) {
+                    updateTest(tests[testResultIndex])
+                } else {
+                    nextDevice()
+                }
+            }
+
+            function nextDevice() {
+                if(deviceIndex == devices.length - 1) {
+                    location.reload() // Reload at end to load new spoon results.
+                } else {
+                    deviceIndex++
+                    updateDevice(devices[deviceIndex])
+                }
+            }
+
+            // If we start feeling fancy we could create an actual class. Until then, we're global.
+            var deviceIndex = 0;
+            var testResultIndex = 0;
+            var screenshotIndex = 0;
+
+            // Start it off
+            $(function() {
+                updateDevice(devices[deviceIndex]);
+            });
+        </script>
+    </body>
+</html>
